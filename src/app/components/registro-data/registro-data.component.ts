@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-registro-data',
@@ -10,6 +11,26 @@ export class RegistroDataComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+
+    Swal.fire({
+      allowOutsideClick:false,
+      icon: 'info',
+      text: 'Enviando...'
+    });
+    Swal.showLoading();
+    setTimeout(()=>{                        
+      Swal.close();
+      Swal.fire({
+        allowOutsideClick:false,
+        icon: 'success',
+        text: 'Registro finalizado'
+      });
+
+    }, 2000);
+  
   }
 
 }

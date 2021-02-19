@@ -22,13 +22,13 @@
                         <p class="d-lg-none">Facebook</p>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isHome()">
-                    <a href="https://www.creative-tim.com/product/paper-kit-2-pro-angular?ref=pk2-angular-free-local" target="_blank" class="btn btn-danger btn-round">Upgrade to Pro</a>
+                <li class="nav-item">
+                    <a class="nav-link" rel="tooltip"  data-placement="bottom" href="https://www.facebook.com/minsaperu" target="_blank">
+                        <p class="d-lg-none">Soy Vulnerable</p>
+                    </a>
                 </li>
-                <li class="nav-item" *ngIf="!isHome()">
-                    <a [routerLink]="['/registro']" *ngIf="!isDocumentation()" class="nav-link">Registrarme</a>
-                    <a [routerLink]="['/landing']" *ngIf="isDocumentation()" class="nav-link">Back to Kit</a>
-                </li>
+
+                
             </ul>
         </div>
     </div>

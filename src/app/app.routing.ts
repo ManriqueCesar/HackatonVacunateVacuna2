@@ -13,11 +13,10 @@ import { RegistroDataComponent } from './components/registro-data/registro-data.
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    { path: 'home',             component: ComponentsComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'registro',         component: RegisterComponent},
     { path: 'signup',           component: SignupComponent },
-    { path: 'landing',          component: LandingComponent },
+    { path: 'home',          component: LandingComponent },
     { path: 'nucleoicons',      component: NucleoiconsComponent },
     { path: 'registro-data',      component: RegistroDataComponent }
 ];
