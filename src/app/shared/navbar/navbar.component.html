@@ -22,9 +22,10 @@
                         <p class="d-lg-none">Facebook</p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" rel="tooltip"  data-placement="bottom" href="https://www.facebook.com/minsaperu" target="_blank">
-                        <p class="d-lg-none">Soy Vulnerable</p>
+                <li class="nav-item" *ngIf="!isDocumentation()">
+                    <a class="nav-link" rel="tooltip" title="Facebook MINSA" data-placement="bottom"  [routerLink]="['/registro']" target="_blank">
+                        Soy vulnerable
+                        <p class="d-lg-none">Facebook</p>
                     </a>
                 </li>
 
