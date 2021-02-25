@@ -26,7 +26,7 @@ export class RegistroDataComponent implements OnInit {
       Swal.fire({
         allowOutsideClick:false,
         icon: 'success',
-        text: 'Registro finalizado'
+        text: 'Registro finalizado. Gracias por ser parte de la lucha contra el COVID'
       });
 
     }, 2000);
